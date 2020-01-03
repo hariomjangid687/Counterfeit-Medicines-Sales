@@ -1,6 +1,6 @@
 Counterfeit-Medicines-Sales
 
-#Problem Statement-----
+#Problem Statement------------------------------->
 Counterfeit medicines are fake medicines which are either contaminated or contain wrong or no active
 ingredient. They could have the right active ingredient but at the wrong dose. Counterfeit drugs are illegal and
 are harmful to health. 10% of the world's medicine is counterfeit and the problem is even worse in developing
@@ -14,12 +14,12 @@ rendering them ineffective. Government has decided that they should focus on ill
 worth first instead of trying to control all of them. In order to do that they have collected data which will help them
 to predict sales figures given an illegal operation's characteristics.
 
-Solution---------
+#Solution---------------------------------------->
 We have two data files 
 1)Counterfeit_train.csv
 2)Counterfeit_test.csv
 
-Steps
+Steps--->
 A)First I loaded both train and test data using python pandas library.
 B)Then I concatenated both train and test data for data preprocessing and data cleaning.
 C)Then I removed  ID columns from the data because include ID columns in modeling process doesn't make sense.
