@@ -22,7 +22,7 @@ We have two data files
 2)Counterfeit_test.csv
 
 # Steps-
-A)First I loaded both train and test data using python pandas library.
+A)First I loaded both train and test data using python pandas library.\n
 B)Then I concatenated both train and test data for data preprocessing and data cleaning.
 C)Then I removed  ID columns from the data because include ID columns in modeling process doesn't make sense.
 D)Then I made (n-1) dummies of all the categorical columns.
