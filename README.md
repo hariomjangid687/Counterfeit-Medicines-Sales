@@ -1,6 +1,6 @@
 # Counterfeit-Medicines-Sales Prediction
 
-# Problem Statement-
+# Problem Statement
 
 Counterfeit medicines are fake medicines which are either contaminated or contain wrong or no active
 ingredient. They could have the right active ingredient but at the wrong dose. Counterfeit drugs are illegal and
@@ -18,7 +18,7 @@ to predict sales figures given an illegal operation's characteristics.
 # Solution-
 
 We have two data files<br/>
-1)Counterfeit_train.csv
+1)Counterfeit_train.csv  
 2)Counterfeit_test.csv
 
 # Steps
