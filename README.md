@@ -17,24 +17,26 @@ to predict sales figures given an illegal operation's characteristics.
 
 # Solution-
 
-We have two data files<br/>
+We have two data sets<br/>
 1)Counterfeit_train.csv  
 2)Counterfeit_test.csv
 
 # Steps
-A)First I loaded both train and test data using python pandas library.<br/>
-B)Then I concatenated both train and test data for data preprocessing and data cleaning.  
-C)Then I removed  ID columns from the data because include ID columns in modeling process doesn't make sense.  
-D)Then I made (n-1) dummies of all the categorical columns.  
-E)Then I check Null values and imputed Null values by mean in train data only.  
-F)Then I splitted train and test data after completing data preprocessing. 
-G)Then I splitted train data into 80% and 20%,In which 80% data was used for training and 20% data was used for check the performance of the model.  
-H)Then I build linear regression model on train data and made the predictions on 20% test data.  
-I)Then I calculated Mean Absolute Error which is nothing but the difference between y_predicted and y_actual.  
-J)Then I fit linear regression model on whole training data and made the predictions on whole test data.  
-K)Linear regression was my base model,so for getting better performance I used Random Forest algorithm.  
-L)I used RandomForestRegressor(Regression problem) and RandomizedSearchCv with 10 fold cross validation.  
-M)Then I got the best estimator of randomized_search and by this best_estimator I fitted on my train data and made prediction on test data.  
-N)Then I calculated Mean Absolute Error.  
-O)From both the algorithms,Random Forest gave better performance and better results.
+1)First load both train and test data using python pandas library.<br/>
+2)Concatenate both train and test data for data preprocessing and data cleaning.    
+3)Drop all ID columns from the data because including ID columns in modeling process doesn't make sense.    
+4)Make (n-1) dummies of all the categorical columns.    
+5)Check Null values and impute Null values by mean in train data only.    
+6)Data preprocessing is complete,now split train and test data.  
+7)Again split train data into 80% and 20%,in which 80% data will be used for training and 20% data was used for testing,check the performance of the model.    
+8)Build linear regression model on train data and make  predictions on 20% test data.    
+9)Calculate Mean Absolute Error which is nothing but the difference between y_predicted and y_actual.    
+10)Fit linear regression model on whole training data and make predictions on whole test data.    
+11)Linear regression is base model,so for getting better performance use another ML models like Random Forest algorithm.    
+12)Use RandomForestRegressor(Regression problem) and RandomizedSearchCv of sklearn library with 10 fold cross validation.    
+13)Find the best estimator of randomized_search and by this best_estimator  fit on 80% train data and make prediction on 20% test data.    
+14)Calculate Mean Absolute Error(Y_predicted-Y_actual).    
+15)Fit on whole training data and make prediction on whole test data.  
+16)Save our predictions in an csv file.  
+17)From both the algorithms,Random Forest give better performance and better predictions.
 
